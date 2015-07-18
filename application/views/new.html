@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <canvas id="canvas" width=300 height=300></canvas>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script>
+            // canvas related variables
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var cw, ch;
+
+            // load the logo and the logo outline
+            // then start the animation
+            var logoOutline;
+            var logo = new Image();
+            logo.onload = start;
+            logo.src = 'https://dl.dropboxusercontent.com/u/139992952/multple/marioStanding.png';
+            function start() {
+
+                logoOutline = outlinePNG(logo, 'lightgray');
+
+                cw = canvas.width = logoOutline.width;
+                ch = canvas.height = logoOutline.height;
+                canvas.style.border = '1px solid red';
+
+                logo.displayY = logo.height - 2;
+
+                requestAnimationFrame(animate);
+            }
+
+
+            function animate(time) {
+
+                // cache logo.displayY into a variable b/ it's used often
+                var y = logo.displayY;
+
+                // clear the logo canvas
+                ctx.clearRect(0, 0, cw, ch);
+
+                // use the clipping version of drawImage to 
+                // increasingly reveal the logo from the bottom
+                ctx.drawImage(logo,
+                        0, y, logo.width, logo.height - y,
+                        2, y + 2, logo.width, logo.height - y);
+
+                // reduce .displayY which increases the reveal
+                logo.displayY--;
+
+                // request another loop if the entire logo has not been revealed
+                if (logo.displayY > 0) {
+
+                    // draw the outline
+                    ctx.drawImage(logoOutline, 0, 0);
+
+                    // request another loop until the logo is fully displayed
+                    requestAnimationFrame(animate);
+                }
+
+            }
+
+            //
+            // Attribution Ken Fyrstenberg
+            // http://stackoverflow.com/questions/25467349/in-a-2d-canvas-is-there-a-way-to-give-a-sprite-an-outline/27127273#27127273
+            function outlinePNG(img, outlineColor) {
+                // new canvas sized to image size + 2px on each side
+                var c = document.createElement('canvas');
+                var cctx = c.getContext('2d');
+                c.width = img.width + 4;
+                c.height = img.height + 4;
+                // redraw the image with 8-way offsets (n,s,e,w,nw,ne,se,sw)
+                cctx.translate(2, 2);
+                cctx.drawImage(img, -2, -2);
+                cctx.drawImage(img, 0, -2);
+                cctx.drawImage(img, 2, -2);
+                cctx.drawImage(img, -2, 0);
+                cctx.drawImage(img, 2, 0);
+                cctx.drawImage(img, -2, 2);
+                cctx.drawImage(img, 0, 2);
+                cctx.drawImage(img, 2, 2);
+                cctx.translate(-2, -2);
+                // fill with color
+                cctx.globalCompositeOperation = "source-in";
+                cctx.fillStyle = outlineColor;
+                cctx.fillRect(0, 0, img.width + 4, img.height + 4);
+                // draw original image in "erase" mode
+                cctx.globalCompositeOperation = "destination-out";
+                cctx.drawImage(img, 2, 2);
+                // return the outline canvas
+                return(c);
+            }
+        </script>
+    </body>
+</html>

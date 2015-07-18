@@ -1,0 +1,1713 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet:400,800);
+@import url(http://fonts.googleapis.com/css?family=Ropa+Sans|Amaranth);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+body {
+  font-family: Gloria Hallelujah ;
+  letter-spacing: 1px;
+  background-color: #2A2C2B;
+}
+body #loading-mask {
+  background: #333439;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999999999;
+}
+body .loading-img {
+  left: 0;
+  position: fixed;
+  top: 25%;
+  width: 100%;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: Sniglet ;
+  letter-spacing: 2px;
+  font-size: 2.6em;
+  color: #fff79d;
+  line-height: 140%;
+}
+h2 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+  color: #fff79d;
+  line-height: 120%;
+}
+h1 {
+  font-size: 4em;
+  letter-spacing: 3px;
+  color: #fff79d;
+  line-height: 120%;
+}
+p {
+  font-family: Amaranth;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #efeee3;
+  text-align: center;
+  line-height: 130%;
+}
+span {
+  font-family: Amaranth;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #efeee3;
+  text-align: center;
+  line-height: 130%;
+}
+/*============================================================
+	For Small Desktop
+==============================================================*/
+@media (min-width: 980px) and (max-width: 1150px) {
+  .container {
+    margin: 0 2%;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 0.8em;
+  }
+}
+/*============================================================
+//	Tablet (Portrait) Design for a width of 768px
+==============================================================*/
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    margin: 0 2%;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+  }
+}
+/*============================================================
+	Mobile (Portrait) Design for a width of 320px
+==============================================================*/
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 0 2%;
+  }
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  p {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+  h3 {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+}
+/*============================================================
+	Mobile (Landscape) Design for a width of 480px
+==============================================================*/
+@media only screen and (min-width: 180px) and (max-width: 767px) {
+  .container {
+    margin: 0 2%;
+  }
+  h1 {
+    font-size: 1.9em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+  h3 {
+    letter-spacing: 1.05px;
+    font-size: 1em;
+  }
+}
+body {
+  position: relative;
+  padding-top: 0px;
+}
+#navigation,
+.navbar-brand,
+.navbar-toggle,
+.navbar-nav > li > a,
+.search-form > #search-sub {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+#navigation {
+  background-color: rgba(20, 74, 68, 0.21);
+}
+#navigation .login a {
+  color: #00C7FC;
+  font-size: 1.1em;
+  font-family: Ropa Sans;
+}
+#navigation .dropdown-menu {
+  background-color: transparent;
+}
+.animated-nav #navigation .dropdown-menu {
+  background-color: transparent;
+  background-color: rgba(20, 74, 68, 0.51);
+}
+#navigation .dropdown-menu button {
+  background-color: #000;
+}
+#navigation .dropdown-menu > li > a {
+  color: #fff;
+}
+#navigation .dropdown-menu > li > a:hover {
+  background-color: rgba(20, 74, 68, 0.87);
+}
+.animated-nav .navigation .navbar-nav > li > a {
+  padding: 25px 10px;
+}
+.animated-nav #navigation > .container {
+  border-bottom: none;
+}
+@media only screen and (max-width: 767px) {
+  .animated-nav .navigation .navbar-nav > li > a {
+    padding: 10px 8px;
+  }
+  #navigation .navbar-toggle {
+    background-color: #00C7FC;
+    border: 1 x solid #ffffff;
+  }
+}
+.navbar-brand {
+  height: inherit;
+  padding-top: 15px ;
+  padding-bottom: -5px;
+}
+.navbar-brand a {
+  display: block;
+}
+.animated-nav .navbar-brand {
+  height: inherit;
+  padding-top: 5px ;
+  padding-bottom: 5px;
+}
+.navigation .navbar-nav > li > a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 40px 15px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  .navigation .navbar-nav > li > a {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+}
+.navigation .navbar-nav > li.current > a {
+  color: #00C7FC;
+}
+.animated-nav .navigation .navbar-nav > li.current > a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.navigation .navbar-nav > li > a:focus,
+.navigation .navbar-nav > li > a:hover {
+  background-color: rgba(20, 74, 68, 0.87);
+}
+.navigation .active {
+  background-color: rgba(20, 74, 68, 0.87);
+}
+#home_poe {
+  /* Vertical */
+  /* Price */
+  /* Horizontal */
+  /* Icons */
+  /* Button */
+  /* Guests */
+  /* Datepicker*/
+  /* Error Message */
+}
+#home_poe .carousel-example-generic {
+  background-attachment: fixed;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  min-width: 100%;
+  display: block;
+}
+#home_poe .carousel-inner .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 100%;
+  height: 100%;
+}
+#home_poe #reservation-form {
+  background-color: transparent;
+}
+#home_poe #reservation-form select,
+#home_poe input {
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+}
+#home_poe #reservation-form select option,
+#home_poe input option {
+  background-color: #333;
+}
+#home_poe #reservation-form select i,
+#home_poe input i {
+  color: #2a7b72;
+}
+#home_poe #reservation-form button {
+  background-color: #2a7b72;
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#home_poe button:hover {
+  background-color: #19554e;
+  opacity: .5;
+}
+#home_poe button:focus {
+  background-color: #1c5a53;
+  opacity: .5;
+}
+#home_poe #reservation-form .reservation-horizontal,
+#home_poe #reservation-form .reservation-vertical,
+#home_poe #contact-form .contact-vertical {
+  padding: 20px 20px;
+  z-index: 9999;
+  background-color: transparent;
+}
+#home_poe #reservation-form .reservation-vertical h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#home_poe #reservation-form .reservation-vertical h4 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#home_poe #reservation-form .price {
+  padding: 10px 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: block;
+  border: 1px dashed #ebebeb;
+}
+#home_poe #reservation-form .price h4 {
+  color: #333;
+  padding-right: 5px;
+}
+#home_poe #reservation-form .price span {
+  color: #979797;
+  font-weight: normal;
+  padding-left: 5px;
+  font-size: 11px;
+}
+#home_poe .form-inline .form-control {
+  width: 100%;
+  margin-top: 24px;
+}
+#home_poe .form-inline .form-control select {
+  width: 100%;
+  margin-top: 10px;
+  font-size: .5em;
+  border: 0px;
+}
+#home_poe #reservation-form .reservation-horizontal .col-sm-1,
+#home_poe #reservation-form .reservation-horizontal .col-sm-2,
+#home_poe #reservation-form .reservation-horizontal .col-sm-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+#home_poe #reservation-form .form-inline select.form-control {
+  width: 100% !important;
+  padding: 0;
+}
+#home_poe #reservation-form .form-inline .form-group {
+  width: 100%;
+}
+#home_poe #reservation-form .popover-icon i {
+  color: #9f9f9f;
+  font-size: 18px;
+}
+#home_poe #reservation-form .fa.infield {
+  position: absolute;
+  float: right;
+  right: 57px;
+  margin-top: 35px;
+  font-size: 14px;
+}
+#home_poe #reservation-form .form-inline .fa.infield {
+  position: absolute;
+  float: right;
+  right: 18.84px;
+  font-size: 14px;
+  top: 0;
+  width: 15px;
+}
+#home_poe #reservation-form .col-sm-2 button {
+  margin-top: 25px;
+}
+#home_poe #reservation-form .guests-select {
+  z-index: 100;
+  cursor: pointer;
+}
+#home_poe #reservation-form .guests-select .guests {
+  margin-top: -251px;
+  width: 200px;
+  height: auto;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  z-index: 500;
+  background-color: #fff;
+  position: absolute;
+  padding: 20px;
+  cursor: default !important;
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: fadeIn;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+}
+#home_poe #reservation-form .form-inline .guests-select .form-group {
+  padding-bottom: 15px;
+}
+#home_poe #reservation-form .hasDatepicker {
+  cursor: pointer;
+}
+#home_poe .error_message {
+  color: #F00;
+}
+#home_poe #error {
+  display: none;
+}
+#home_poe #cnt1 {
+  background-color: #363636;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  text-align: center;
+}
+#home_poe .feature {
+  text-align: center;
+}
+#home_poe #pakages {
+  background-color: #363636;
+}
+#home_poe .img-circle {
+  border: 3px solid #2a7b72;
+}
+#home_poe .pakag {
+  background-color: #363636;
+  margin-bottom: 20px;
+  padding: 5% 0;
+}
+#home_poe .pakag h6 {
+  color: #2a7b72;
+}
+#home_poe .pakag .lower {
+  background-color: #2a7b72;
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#home_poe .pakag .lower:hover {
+  background-color: #1c5a53;
+  opacity: .5;
+}
+#home_poe .pakag .lower:focous {
+  background-color: #1c5a53;
+  opacity: .5;
+}
+#home_poe .feature > div > div {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  transition: 0.2s;
+}
+#home_poe .feature > div:hover > div {
+  margin-top: -10px;
+  border: 1px solid #2a7b72;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 5px;
+  background: rgba(232, 215, 215, 0.1);
+  transition: 0.3s;
+}
+#home_poe #dalailama {
+  background: url(../img/home/dalai_lama.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 70%;
+  padding: 22% 0;
+}
+.main span {
+  font-size: 1em;
+}
+.main .hotel_baner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.main .hotel_baner h1 {
+  margin-top: 300px;
+}
+.main #first-room {
+  position: relative;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.main #first-room a {
+  color: #fff;
+  text-decoration: none;
+}
+.main #first-room #room-1 {
+  background: url(../img/rooms/5.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #first-room #room-2 {
+  background: url(../img/rooms/6.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 500px;
+}
+.main #second-room {
+  position: relative;
+  padding-bottom: 25px;
+}
+.main #second-room a {
+  color: #fff;
+  text-decoration: none;
+}
+.main #second-room #room-3 {
+  background: url(../img/rooms/4.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #thrd-room {
+  position: relative;
+  padding-bottom: 25px;
+}
+.main #thrd-room a {
+  color: #fff;
+  text-decoration: none;
+}
+.main #thrd-room #room-4 {
+  background: url(../img/rooms/1.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #thrd-room #room-5 {
+  background: url(../img/rooms/2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #fourth-room {
+  position: relative;
+  padding-bottom: 25px;
+}
+.main #fourth-room a {
+  color: #fff;
+  text-decoration: none;
+}
+.main #fourth-room #room-6 {
+  background: url(../img/rooms/7.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #fourth-room #room-7 {
+  background: url(../img/rooms/8.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  min-height: 500px;
+}
+.main #room-1,
+.main #room-2,
+.main #room-3,
+.main #room-4,
+.main #room-5,
+.main #room-6,
+.main #room-7 {
+  transition: background 650ms ease-in-out;
+}
+.main #room-1 h4,
+.main #room-2 h4,
+.main #room-3 h4,
+.main #room-4 h4,
+.main #room-5 h4,
+.main #room-6 h4,
+.main #room-7 h4 {
+  margin-top: 360px;
+  margin-left: 50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #2a7b72;
+  padding: 40px 20px 0 20px;
+  font-size: 1em;
+}
+.main #room-1 .info,
+.main #room-2 .info,
+.main #room-3 .info,
+.main #room-4 .info,
+.main #room-5 .info,
+.main #room-6 .info,
+.main #room-7 .info {
+  display: none;
+  border: 1px solid #1dc3f7;
+  margin-top: 200px;
+  margin-left: 50px;
+  width: 230px;
+  height: auto;
+  padding: 1% 12px;
+}
+.main #room-1 .info h5,
+.main #room-2 .info h5,
+.main #room-3 .info h5,
+.main #room-4 .info h5,
+.main #room-5 .info h5,
+.main #room-6 .info h5,
+.main #room-7 .info h5 {
+  border-bottom: 1px solid #1dc3f7;
+  padding: 5%;
+}
+.main #room-1:hover .mas,
+.main #room-2:hover .mas,
+.main #room-3:hover .mas,
+.main #room-4:hover .mas,
+.main #room-5:hover .mas,
+.main #room-6:hover .mas,
+.main #room-7:hover .mas {
+  height: 500px;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main #room-1:hover .info,
+.main #room-2:hover .info,
+.main #room-3:hover .info,
+.main #room-4:hover .info,
+.main #room-5:hover .info,
+.main #room-6:hover .info,
+.main #room-7:hover .info {
+  display: inline-block;
+}
+.main #room-1:hover h4,
+.main #room-2:hover h4,
+.main #room-3:hover h4,
+.main #room-4:hover h4,
+.main #room-5:hover h4,
+.main #room-6:hover h4,
+.main #room-7:hover h4 {
+  display: none;
+}
+#hotel #hotel_cover {
+  background: url(../img/covers/2.png) no-repeat center center;
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#hotel #histry {
+  padding: 80px 0;
+  text-align: center;
+}
+#hotel #histry .smooth-midle li {
+  list-style: none;
+  display: inline-block;
+}
+#hotel #histry .smooth-midle li a {
+  text-decoration: none;
+}
+#camp_poe .camp_baner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#camp_poe h3 {
+  border-bottom: 1px solid;
+}
+#camp_poe #main_info {
+  background: url(../img/hotel/Untitled-2.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+#camp_poe #intro {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#camp_poe #intro .discrip p {
+  padding: 10px 0;
+}
+#camp_poe #intro .discrip h3 {
+  margin-bottom: 30px;
+  font-size: 1.6em;
+}
+#camp_poe #intro .discrip h3 span {
+  color: #00C7FC;
+  font-size: 1.6em;
+}
+#camp_poe #intro .discrip h2 {
+  font-size: 1.5em;
+  padding: 20px;
+  text-transform: uppercase;
+}
+#camp_poe #intro .discrip h2 span {
+  color: #00C7FC;
+}
+#camp_poe #ground {
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+#camp_poe #ground .ground-info {
+  padding: 20px;
+  background: #2a7b72;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 250px;
+}
+#camp_poe #ground .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 70%;
+  border-radius: 0px;
+}
+#camp_poe #hotel-map {
+  padding: 20px 10px;
+}
+#camp_poe #hotel-map .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+#camp_poe #lobby {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+#camp_poe #lobby .ground-lobby {
+  padding: 5% 5%;
+  background: #2a7b72;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 70%;
+}
+#camp_poe #lobby .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 70%;
+  border-radius: 0px;
+}
+#camp_poe #lobby-2 {
+  padding: 20px 10px;
+}
+#camp_poe #lobby-2 .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+#camp_poe #pool-and-arbor {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+#camp_poe #pool-and-arbor .fool-info {
+  padding: 5% 5%;
+  background: #2a7b72;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 70%;
+}
+#camp_poe #pool-and-arbor .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+#camp_poe #pool-and-arbor-two {
+  padding: 20px 10px;
+}
+#camp_poe #pool-and-arbor-two .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+@media only screen and (max-width: 768px) {
+  #camp_poe .fool-img,
+  #camp_poe .ground-img,
+  #camp_poe .lobby-img {
+    display: none;
+  }
+  #camp_poe .ground-logo,
+  #camp_poe .ground-map {
+    padding: 2% 0;
+  }
+}
+#room_one img {
+  border-radius: 0px;
+}
+#room_one #room_one_first,
+#room_one #room_one_thrd,
+#room_one #room_one_second {
+  padding: 10px 10px;
+}
+#room_one #room_one_first .img-rounded,
+#room_one #room_one_thrd .img-rounded,
+#room_one #room_one_second .img-rounded {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+#room_one #room_one_first .booking,
+#room_one #room_one_thrd .booking,
+#room_one #room_one_second .booking {
+  background: #333333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+}
+#room_one #room_one_first .booking .room-info,
+#room_one #room_one_thrd .booking .room-info,
+#room_one #room_one_second .booking .room-info {
+  height: 430px;
+}
+#room_one #room_one_first .booking .room-info select,
+#room_one #room_one_thrd .booking .room-info select,
+#room_one #room_one_second .booking .room-info select,
+#room_one #room_one_first .booking .room-info input,
+#room_one #room_one_thrd .booking .room-info input,
+#room_one #room_one_second .booking .room-info input {
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+}
+#room_one #room_one_first .booking .room-info select option,
+#room_one #room_one_thrd .booking .room-info select option,
+#room_one #room_one_second .booking .room-info select option,
+#room_one #room_one_first .booking .room-info input option,
+#room_one #room_one_thrd .booking .room-info input option,
+#room_one #room_one_second .booking .room-info input option {
+  background-color: #333;
+}
+#room_one #room_one_first .booking .room-info select i,
+#room_one #room_one_thrd .booking .room-info select i,
+#room_one #room_one_second .booking .room-info select i,
+#room_one #room_one_first .booking .room-info input i,
+#room_one #room_one_thrd .booking .room-info input i,
+#room_one #room_one_second .booking .room-info input i {
+  color: #2a7b72;
+}
+#room_one #room_one_first .booking .room-info button,
+#room_one #room_one_thrd .booking .room-info button,
+#room_one #room_one_second .booking .room-info button {
+  background-color: #2a7b72;
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+#room_one #room_one_first .booking .room-info button:hover,
+#room_one #room_one_thrd .booking .room-info button:hover,
+#room_one #room_one_second .booking .room-info button:hover {
+  background-color: #19554e;
+  opacity: .5;
+}
+#room_one #room_one_first .booking .room-info button:focus,
+#room_one #room_one_thrd .booking .room-info button:focus,
+#room_one #room_one_second .booking .room-info button:focus {
+  background-color: #1c5a53;
+  opacity: .5;
+}
+#room_one #room_one_first .booking .form_start,
+#room_one #room_one_thrd .booking .form_start,
+#room_one #room_one_second .booking .form_start {
+  padding: 5%;
+}
+#room_one #room_one_first .booking .form_start input,
+#room_one #room_one_thrd .booking .form_start input,
+#room_one #room_one_second .booking .form_start input,
+#room_one #room_one_first .booking .form_start select,
+#room_one #room_one_thrd .booking .form_start select,
+#room_one #room_one_second .booking .form_start select {
+  border: 1px solid #000;
+  border-radius: 0px ;
+  background-color: transparent;
+}
+#room_one #room_one_first .booking .form_start select,
+#room_one #room_one_thrd .booking .form_start select,
+#room_one #room_one_second .booking .form_start select {
+  margin-bottom: 20%;
+}
+#room_one #room_one_first .booking .room-info,
+#room_one #room_one_thrd .booking .room-info,
+#room_one #room_one_second .booking .room-info {
+  color: #95A5A6;
+}
+#room_one #room_one_first .booking .room-info h3,
+#room_one #room_one_thrd .booking .room-info h3,
+#room_one #room_one_second .booking .room-info h3 {
+  font-size: 2em;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#room_one #room_one_first .booking .room-info p,
+#room_one #room_one_thrd .booking .room-info p,
+#room_one #room_one_second .booking .room-info p {
+  padding: 0 5%;
+}
+#room_one #room_one_first .booking,
+#room_one #room_one_thrd .booking,
+#room_one #room_one_second .booking {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#team_poe .team_baner {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+#team_poe #main_info {
+  background: url(../img/hotel/Untitled-2.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+#team_poe #main_info h1 {
+  margin-bottom: 4%;
+}
+#team_poe #main_info p {
+  padding: 25px;
+}
+#team_poe #team-row {
+  padding: 6% 5%;
+  text-align: center;
+}
+#team_poe .about-team {
+  color: #fff;
+  padding-bottom: 40px;
+}
+#team_poe .about-team .title h1 {
+  color: #fff;
+}
+#team_poe .team-mate {
+  background-color: #363636;
+}
+#team_poe .member-photo {
+  overflow: hidden;
+  position: relative;
+}
+#team_poe .member-photo img {
+  -webkit-transition: all 0.6s ease 0s;
+  -moz-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+#team_poe .member-photo:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#team_poe .member-title {
+  border-bottom: 1px solid #2a7b72;
+  padding: 10px 15px;
+}
+#team_poe .member-photo .mask {
+  border: 1px solid #2a7b72;
+  background-color: rgba(42, 123, 114, 0.67);
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 600ms ease-out 0s;
+  -moz-transition: all 600ms ease-out 0s;
+  -o-transition: all 600ms ease-out 0s;
+  transition: all 600ms ease-out 0s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  -moz-transform: rotateY(180deg) scale(0.5, 0.5);
+  -ms-transform: rotateY(180deg) scale(0.5, 0.5);
+  -o-transform: rotateY(180deg) scale(0.5, 0.5);
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+#team_poe .member-photo:hover .mask {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  -moz-transform: rotateY(0deg) scale(1, 1);
+  -ms-transform: rotateY(0deg) scale(1, 1);
+  -o-transform: rotateY(0deg) scale(1, 1);
+  transform: rotateY(0deg) scale(1, 1);
+}
+#team_poe .team-mate h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+#team_poe .member-info {
+  padding: 15px;
+}
+#team_poe .mask ul {
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+#team_poe .mask ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+#team_poe .mask ul li a {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+}
+#team_poe .mask ul li a:hover {
+  background-color: #00C7FC;
+  border: 1px solid transparent;
+}
+#team_poe #modal-dialog {
+  background-color: #363636;
+}
+#team_member .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+#team_member .picther {
+  position: relative;
+  background: url(../img/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+#team_member .details {
+  background-color: #fff;
+  position: absolute;
+}
+#Shop_content .cart_baner {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+#Shop_content .addcollect {
+  background-color: #209a94;
+  width: 100%;
+  height: 50PX;
+}
+#Shop_content .addcollect .cart-total {
+  text-align: center;
+  margin-top: 12px;
+  color: #0D4D4B;
+  font-size: 12px;
+}
+#Shop_content .addcollect .cart-total span {
+  padding: 3px 0px;
+  text-align: center;
+  background-color: #0D4D4B;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+#Shop_content .addcollect .cart-total button {
+  margin-top: -5px;
+  border: 1px solid  #0D4D4B;
+}
+#Shop_content .search {
+  padding-top: 30px ;
+  padding-bottom: 30px ;
+  margin-bottom: 50px;
+  background-color: #00c8be;
+  color: #0D4D4B;
+  font-size: 1.1em;
+}
+#Shop_content h3 {
+  color: #00C7FC;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+#Shop_content p {
+  color: #209a94;
+  font-size: 1em;
+}
+#Shop_content .thumbnail {
+  border-radius: 0px;
+  border: 2px solid #00C7FC;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+}
+#Shop_content .thumbnail .caption {
+  margin: 0px;
+  border-top: 2px solid #00C7FC;
+}
+#Shop_content .thumbnail .caption .btn-primary {
+  border-radius: 0px;
+  border: 1px solid  #00C7FC;
+  background-color: transparent;
+  color: #056382;
+  margin-right: 0;
+  transition: background 350ms ease-in-out;
+}
+#Shop_content .thumbnail .caption .btn-primary:hover {
+  background-color: #00C7FC;
+  color: #fff;
+  background-position: left bottom;
+}
+#Shop_content .thumbnail .btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(30, 205, 227, 0.76);
+  border-radius: 3px 0 0 3px;
+}
+#Shop_content .thumbnail .btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#Shop_content .thumbnail .btn {
+  margin-bottom: 10px;
+}
+#Shop_content .thumbnail:hover {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+#Shop_content .form-inline input {
+  border-radius: 0;
+  border: 1px solid #209a94;
+  background-color: transparent;
+}
+#Shop_content .form-inline button {
+  background-color: #209a94;
+  border: 1px solid #209a94;
+  color: #fff;
+  transition: background 350ms ease-in-out;
+}
+#Shop_content .form-inline button:hover {
+  background-color: #00c8be;
+}
+#view_item ul li {
+  list-style: none;
+}
+#view_item hr {
+  border: 1px solid #00C7FC;
+}
+#view_item h4,
+#view_item h3,
+#view_item p {
+  color: #00C7FC;
+  font-size: 1.5em;
+}
+#view_item .info-set {
+  padding-top: 50px;
+}
+#view_item .btn-primary {
+  border-radius: 0px;
+  border: 1px solid  #00C7FC;
+  background-color: transparent;
+  color: #056382;
+  margin-right: 0;
+  transition: background 350ms ease-in-out;
+}
+#view_item .btn-primary:hover {
+  background-color: #00C7FC;
+  color: #fff;
+  background-position: left bottom;
+}
+#view_item .btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(30, 205, 227, 0.76);
+  border-radius: 3px 0 0 3px;
+}
+#view_item .btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#view_item .btn {
+  margin-bottom: 10px;
+}
+#view_item #view_item {
+  padding: 70px 0;
+}
+#view_item #view_item #slider {
+  border: 2px solid #00C7FC;
+}
+#view_item #view_item #slider .hide-bullets {
+  margin-left: -30px;
+}
+#view_item #view_item #slider .thumbnail {
+  border: 2px solid #00C7FC;
+  border-radius: 0px;
+}
+#view_item #others {
+  background-color: #00c8be;
+  padding: 3% 0;
+}
+#view_item #others #owl-demo .item {
+  margin: 10px;
+  border: 2px solid #00C7FC;
+}
+#view_item #others #owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#view_item #others #owl-demo .item:hover .mas {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: inherit;
+  position: relative;
+}
+#registration {
+  margin-top: 100px;
+}
+#registration .container {
+  -webkit-box-shadow: 19px 16px 0px 3px #126676;
+  -moz-box-shadow: 19px 16px 0px 3px #126676;
+  box-shadow: 19px 16px 0px 3px #126676;
+  background-color: #0A769A;
+}
+#registration .container .pad {
+  padding-top: 30px;
+}
+#registration h4 {
+  margin-left: 100px;
+}
+#registration h3 {
+  margin-left: 150px;
+  padding: 10px 0;
+  font-size: 1.7em;
+}
+#registration .left,
+#registration .right {
+  margin: 3%;
+}
+#registration select,
+#registration input {
+  background-color: transparent;
+  border-radius: 0px;
+  color: #0E2E3F;
+}
+#registration button {
+  border-radius: 0px;
+  color: #fff;
+  background-color: #2d2d2d;
+}
+#registration button:hover {
+  background-color: #1c1818;
+}
+#registration .form-group .form-control {
+  padding: 7px 12px;
+  border-color: #f2f2f2;
+  box-shadow: none;
+}
+#registration .form-group label {
+  color: #fff;
+  font-weight: 400;
+}
+#registration .form-group .form-control {
+  border: 1px solid #fff;
+  color: #0E2E3F;
+}
+#contact_info #main_info {
+  background: url(../img/hotel/Untitled-2.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  padding: 30px 0;
+}
+#contact_info #main_info h1 {
+  margin-bottom: 4%;
+}
+#contact_info #main_info p {
+  padding: 25px;
+}
+#contact_info #contact-page {
+  background: url(../img/hotel/contact.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+  padding: 100px 0;
+}
+#contact_info #contact-page .form-on input,
+#contact_info #contact-page .form-on textarea {
+  border: 0px;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-weight: 400;
+  color: #ffffff;
+}
+#contact_info #contact-page button {
+  border-radius: 0px;
+  color: #fff;
+  background-color: #2d2d2d;
+  border: 1px solid #fff;
+}
+#contact_info #contact-page button:hover {
+  background-color: #1c1818;
+}
+#contact_info #contact-page .form-group .form-control {
+  padding: 7px 12px;
+  border-color: #f2f2f2;
+  box-shadow: none;
+}
+#contact_info #contact-page .form-group label {
+  color: #fff;
+  font-weight: 400;
+}
+#contact_info #contact-page .form-group .form-control {
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: Amaranth;
+}
+#contact_info .address {
+  text-align: center;
+  margin-top: 100px;
+}
+#contact_info #map {
+  position: relative;
+}
+#contact_info #gmap {
+  height: 450px;
+}
+#poe_pakages .pakages_baner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#poe_pakages #main_info {
+  background: url(../img/hotel/Untitled-2.png) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+#poe_pakages #main_info h1 {
+  margin: 5% 0;
+}
+#poe_pakages .pakage {
+  text-align: center;
+  padding: 5% 0;
+}
+#poe_pakages .pakage h1 {
+  font-size: 2em;
+  padding: 2%;
+}
+#poe_pakages hr {
+  background-color: #2a7b72;
+  color: #2a7b72;
+}
+#poe_pakages .summary-divider {
+  margin: 80px 0;
+  background-color: #2a7b72;
+  color: #2a7b72;
+}
+#poe_pakages h5 {
+  color: #2a7b72;
+}
+#poe_pakages h2 {
+  padding-top: 2% ;
+}
+#poe_pakages .summary {
+  overflow: hidden;
+}
+#poe_pakages .summary-image.pull-left {
+  margin-right: 40px;
+}
+#poe_pakages .summary-image.pull-right {
+  margin-left: 40px;
+}
+#poe_pakages footer {
+  margin: 50px 0;
+}
+#booking {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+#booking .well {
+  border-radius: 0px;
+  background-color: #363636;
+}
+#booking p {
+  color: #2a7b72;
+  opacity: .6;
+}
+#booking .text-center {
+  text-align: center;
+}
+#booking .text-center .fa {
+  color: #fff;
+  font-size: 1.5em;
+}
+#booking #step-1 h1 {
+  padding: 3%;
+}
+#booking .selection {
+  font-size: 0.8em;
+  padding: 1% 1%;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #141212;
+  font-family: Amaranth;
+}
+#booking .selection select,
+#booking .selection input {
+  background-color: rgba(31, 31, 31, 0.43);
+  border: 1px solid  #2a7b72;
+  border-radius: 0px;
+}
+#booking .selection button {
+  border: 1px solid  #2a7b72;
+  background-color: #2a7b72;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0px;
+}
+#booking .selection button:hover {
+  opacity: .7;
+}
+#booking .selection #hotel_details fa {
+  color: #fff;
+}
+#booking .selection #hotel_details .btn-success {
+  border: 1px solid  #2a7b72;
+  background-color: #2a7b72;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0px;
+}
+#booking .selection #hotel_details .btn-success:hover {
+  opacity: .7;
+}
+#booking .selection #hotel_details ul li {
+  display: inline;
+  list-style: none;
+}
+#booking #step-2 button {
+  border: 1px solid  #2a7b72;
+  background-color: #2a7b72;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0px;
+}
+#booking #step-2 button:hover {
+  opacity: .7;
+}
+#booking #step-2 .panel,
+#booking #step-2 .panel-default {
+  background-color: #363636;
+  border-radius: 0px;
+  border: 1px solid #2a7b72;
+}
+#booking #step-2 .panel-heading {
+  background-color: #2A2C2B;
+  border-bottom: 1px solid #2a7b72;
+}
+#booking #step-2 #booked_rooms {
+  padding: 2% 2%;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #141212;
+  font-family: Amaranth;
+}
+#booking #step-2 #booked_rooms select,
+#booking #step-2 #booked_rooms input {
+  background-color: rgba(31, 31, 31, 0.43);
+  border: 1px solid  #2a7b72;
+  border-radius: 0px;
+}
+#booking #step-2 #booked_rooms button {
+  border: 1px solid  #2a7b72;
+  background-color: #2a7b72;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 0px;
+}
+#booking #step-2 #booked_rooms button:hover {
+  opacity: .7;
+}
+#footer {
+  margin-top: 40px;
+  background: url(../img/covers/footer_img.jpg) no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 100%;
+  height: 100%;
+}
+#footer p {
+  font-size: .9em;
+}
+#footer .footer-content {
+  text-align: center;
+  color: #fff;
+  padding-top: 10%;
+  padding-bottom: 15% ;
+  /* Social Icons */
+}
+#footer .footer-content .hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+#footer .footer-content .ease-all {
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+#footer .footer-content .icon {
+  margin-top: 40px;
+}
+#footer .footer-content .social {
+  height: 10rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#footer .footer-content .social li a {
+  display: inline-block;
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin-right: 1.5rem;
+  text-align: center;
+  padding-top: 13px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  /*background-color: rgba(62, 202, 255, 0.4);*/
+  -webkit-box-shadow: inset 0 0 0 40px rgba(62, 202, 255, 0.74);
+  -moz-box-shadow: inset 0 0 0 40px rgba(62, 202, 255, 0.74);
+  -o-box-shadow: inset 0 0 0 40px rgba(62, 202, 255, 0.74);
+  -ms-box-shadow: inset 0 0 0 40px rgba(62, 202, 255, 0.74);
+  box-shadow: inset 0 0 0 40px rgba(62, 202, 255, 0.74);
+  color: #fff;
+}
+#footer .footer-content .social li a:hover {
+  -webkit-box-shadow: inset 0 0 0 1px #1dc3f7;
+  -moz-box-shadow: inset 0 0 0 1px #1dc3f7;
+  -o-box-shadow: inset 0 0 0 1px #1dc3f7;
+  -ms-box-shadow: inset 0 0 0 1px #1dc3f7;
+  box-shadow: inset 0 0 0 1px r#1dc3f7;
+  color: rgba(62, 202, 255, 0.4);
+}
+#footer .form-inline .form-control {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid  #fff;
+}
+#footer .form-inline .form-control:hover {
+  background-color: rgba(62, 202, 255, 0.4);
+}
+#footer .form-inline button {
+  background-color: transparent;
+  border: 10x solid rgba(62, 202, 255, 0.4);
+  border: 1px solid  #fff;
+  color: #fff;
+}
+#footer .form-inline button:hover {
+  background: #00C7FC;
+  border: 1px solid  #00C7FC;
+  color: #fff;
+}
+#sign {
+  position: relative;
+  border-radius: 0px;
+}
+#sign p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+}
+#sign p a {
+  color: #1dc3f7;
+}
+footer .modal-content {
+  font-family: Amaranth;
+  background-color: #0A769A;
+  border-radius: 0px;
+  background: #333;
+}
+footer .modal-content input {
+  border-radius: 0px;
+  border: 1px soilid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+footer .modal-content button {
+  background-color: #2a7b72;
+  border: 1px solid #2a7b72;
+  border-radius: 0px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+footer .modal-content button:hover {
+  background-color: #19554e;
+  opacity: .5;
+}
+footer .modal-content button:focus {
+  background-color: #1c5a53;
+  opacity: .5;
+}

@@ -1,0 +1,333 @@
+.carousel-example-generic {
+  background-attachment: fixed;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+.carousel-inner .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+#reservation-form {
+  margin-top: 20px;
+  padding: 3%;
+}
+/* Vertical */
+#reservation-form .reservation-vertical h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#reservation-form .reservation-vertical h4 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#reservation-form input {
+  background: none;
+  border: solid 2px #000000;
+  color: #000000;
+}
+#reservation-form select,
+#reservation-form .guests-select {
+  border-radius: 0px;
+  background-color: transparent;
+  border: 0px solid;
+  border-bottom: 2px solid #000;
+}
+#reservation-form input:focus,
+input:active {
+  outline: none;
+  border: solid 0px #fff;
+}
+#reservation-form input[type="text"],
+#reservation-form input[type="email"] {
+  border: none;
+  border: solid 0px #fff;
+  border-bottom: solid 2px #000000;
+  border-radius: 0px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#reservation-form .form-control {
+  font-size: 1.2em;
+  color: #000;
+}
+#reservation-form .form-control {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+  /* -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  /* transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+  border: 0px solid #fff;
+  border-bottom: solid 2px #000000;
+}
+#reservation-form select {
+  border: none;
+  border: solid 0px #fff;
+  border-bottom: solid 2px #000000;
+  border-radius: 0px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#reservation-form .form-control {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+  /* -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  /* transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+  border: 0px solid #fff;
+  border-bottom: solid 0px #000000;
+}
+#reservation-form button {
+  border: 0px;
+  background-color: #000;
+  border-radius: 0px;
+  color: #fff;
+}
+/* Price */
+#reservation-form .price {
+  padding: 10px 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: block;
+}
+#reservation-form .price h4 {
+  color: #333;
+  padding-right: 5px;
+}
+#reservation-form .price span {
+  color: #000;
+  font-weight: normal;
+  padding-left: 5px;
+  font-size: 11px;
+}
+/* Horizontal */
+.form-inline .form-control {
+  width: 100%;
+}
+#reservation-form .reservation-horizontal .col-sm-1,
+#reservation-form .reservation-horizontal .col-sm-2,
+#reservation-form .reservation-horizontal .col-sm-3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+#reservation-form .form-inline select.form-control {
+  width: 100% !important;
+}
+#reservation-form .form-inline .form-group {
+  width: 100%;
+}
+/* Icons */
+#reservation-form .popover-icon i {
+  color: #9f9f9f;
+  font-size: 18px;
+}
+#reservation-form .fa.infield {
+  position: absolute;
+  float: right;
+  right: 57px;
+  margin-top: 35px;
+  font-size: 14px;
+}
+#reservation-form .form-inline .fa.infield {
+  position: absolute;
+  float: right;
+  right: 18.84px;
+  font-size: 14px;
+  top: 0;
+  width: 15px;
+}
+/* Guests */
+#reservation-form .guests-select {
+  z-index: 100;
+  cursor: pointer;
+}
+#reservation-form .guests-select .guests {
+  margin-top: -261px;
+  width: 200px;
+  height: auto;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  z-index: 500;
+  background-color: #fff;
+  position: absolute;
+  padding: 20px;
+  cursor: default !important;
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: fadeIn;
+  -moz-animation-duration: 0.2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+}
+#reservation-form .form-inline .guests-select .form-group {
+  padding-bottom: 15px;
+}
+/* Datepicker*/
+#reservation-form .hasDatepicker {
+  cursor: pointer;
+}
+/* Error Message */
+.error_message {
+  color: #F00;
+}
+#error {
+  display: none;
+}
+/* Datepicker */
+#ui-datepicker-div {
+  padding: 20px !important;
+}
+#ui-datepicker-div,
+.ui-datepicker-title {
+  color: #5e5e5e !important;
+}
+.ui-widget-content {
+  -webkit-border-radius: 5px 5px 5px 5px !important;
+  border-radius: 5px 5px 5px 5px !important;
+  border: 1px solid #ebebeb !important;
+  -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  margin-top: -3px;
+}
+.ui-widget-header {
+  background: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: 2px solid !important;
+  border-left: none !important;
+}
+.ui-datepicker-header {
+  -webkit-border-radius: 0 0 0 0 !important;
+  border-radius: 0 0 0 0 !important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: none !important;
+  border: 1px solid #e1e1e1 !important;
+}
+.ui-datepicker table {
+  margin: 0 !important;
+}
+#reservation-form .price,
+label span,
+.room-thumb .main .price,
+.room-thumb .content p span,
+.blog-author span,
+#owl-reviews .text-balloon span,
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+aside .widget ul a:hover,
+.yamm a:hover,
+.pagination > li > a {
+  color: #75c5cf !important;
+}
+/* Icon color */
+#reservation-form .fa.infield,
+#reservation-form .form-inline .fa.infield,
+.room-thumb .content i,
+.box-icon i,
+table i,
+#go-top i,
+.testimonials .owl-theme .owl-controls .owl-buttons div i,
+.standard-slider .owl-theme .owl-controls .owl-buttons div i,
+.testimonials .owl-theme .owl-controls .owl-buttons div,
+.standard-slider .owl-theme .owl-controls .owl-buttons div,
+#go-top {
+  color: #75c5cf;
+}
+/* Fontawesome Page */
+.fontawesome-icon-list {
+  position: relative;
+  padding-top: 20px;
+}
+.fontawesome-icon-list ul li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 270px;
+}
+.fontawesome-icon-list ul li .fa {
+  font-size: 20px;
+  width: 20px;
+  margin: 0 10px 40px 0;
+}
+/* Form */
+label {
+  color: #5e5e5e;
+}
+.form-control {
+  color: #bfbfbf;
+}
+.form-control option {
+  color: #5e5e5e;
+}
+.form-control option:disabled {
+  color: #bfbfbf;
+}
+.form-control:focus {
+  border: 1px solid #cccccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:-moz-placeholder {
+  color: #bfbfbf;
+}
+.form-control::-moz-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+.form-control::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+#fotter-img {
+  background-image: url(../../img/fotter-img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#fotter-img h1 {
+  text-align: center;
+  margin-top: 25%;
+}
+#fotter-img h1 span {
+  font-size: .3em;
+}

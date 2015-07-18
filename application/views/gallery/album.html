@@ -1,0 +1,187 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+		<meta name="description" content="Responsive Twitter Bootstrap Template For Photography Portfolio">
+		<meta name="author" content="Maria Antonietta Perna">
+		
+		<title>Camp Poe Gallery</title>
+		
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="<?php echo base_url(); ?>resoures/css/boostrap.css">
+		
+		
+		<!-- FontAwesome -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Blue Imp Gallery -->
+		<link href="css/blueimp-gallery.min.css" rel="stylesheet">
+
+		<link href="css/blueimp-gallery-indicator.css" rel="stylesheet">
+		
+		 <!-- Custom CSS -->
+		<link href="css/theme.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<!-- .preloader -->
+		<div class="preloader">
+			<img src="imgs/preloader.gif" alt="">
+		</div> <!-- /.preloader -->
+	
+		<div id="site-wrapper">
+			
+			<nav id="sidebar-wrapper" role="navigation">
+				<ul class="sidebar-nav">
+					<li class="clearfix">
+						<div class="close-icon pull-right">
+							<i class="fa fa-times"></i><span class="sr-only">Close</span>
+						</div>
+					</li>
+				
+					<li><a title="Work" href="work.html">Work</a></li>
+					<li><a title="Blog" href="blog.html">Blog</a></li>
+					<li><a title="Style Guide" href="styleguide.html">Style Guide</a></li>
+				</ul> <!-- .sidebar-nav -->
+			</nav> <!-- #sidebar-wrapper -->
+		
+			<!-- #page-content-wrapper -->
+			<div id="page-content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 menu-toggle-container">
+							<span class="menu-toggle menu-toggle-btn" id="menu-toggle"><i class="fa fa-navicon"></i></span>
+							<span class="sr-only">Toggle sidebar view</span>
+						</div>
+					</div>  <!-- /.row -->
+					
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">
+							<h2 class="page-header centered-header">Al<span>b</span>um 1</h2>
+						</div>
+					</div> <!-- /.row -->
+					
+					<div class="row pad-top">
+					
+						<div class="col-md-10 col-md-offset-1">
+							<div class="row album-container pad-bottom">
+							
+								<!-- Album row 1 -->
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work1.jpg" title="Photo 1" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work1-thumb.jpg" alt="">
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 1</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work4.jpg" title="Photo 2" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work4-thumb.jpg" alt="">
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 2</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								<!-- /End album row 1 -->
+								
+								<!-- Album row 2 -->
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work3.jpg" title="Photo 3" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work3-thumb.jpg" alt="">
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 3</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work6.jpg" title="Photo 4" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work6-thumb.jpg" alt="">
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 4</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								<!-- /End album row 2 -->
+								
+								<!-- Album row 3 -->
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work5.jpg" title="Photo 5" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work5-thumb.jpg" alt="">
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 5</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								
+								<div class="col-md-6 col-sm-6 album">
+									<a href="imgs/work10.jpg" title="Photo 6" data-gallery>
+										<div class="photo-overlay"></div>
+										<figure>
+											<img class="img-responsive album-img" src="imgs/work10-thumb.jpg" alt="">						
+										</figure>
+									</a>
+									<div class="photo-title">
+										<h5>Photo 6</h5>
+									</div>
+								</div> <!-- /.col-md-6 (nested column) -->
+								<!-- /End album row 3 -->
+							
+							</div> <!-- /.row/ .album-container (nested row) -->
+						</div> <!-- /.col-md-10 -->
+					
+					</div> <!-- .row -->
+				</div> <!-- .container -->
+			</div> <!-- /#page-content-wrapper -->
+			
+		</div> <!-- /#site-wrapper -->
+		
+		<!-- Gallery dialog markup: this must go at the bottom -->
+		<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+			<div class="slides"></div>
+			<h3 class="title"></h3>
+			<a class="prev">‹</a>
+			<a class="next">›</a>
+			<a class="close"><i class="fa fa-times"></i></a>
+			<a class="play-pause"></a>
+		</div>
+		
+		<!-- jQuery Version 1.11.2 -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- FitText Plugin -->
+		<script src="js/jquery.fittext.js"></script>
+		<!-- ArcText Plugin -->
+		<script src="js/jquery.arctext.js"></script>
+		<!-- Blue Imp GAllery Plugin -->
+		<script src="js/jquery.blueimp-gallery.min.js"></script>
+		<!-- Theme Scripts -->
+		<script src="js/app.js"></script>
+	</body>
+</html>
