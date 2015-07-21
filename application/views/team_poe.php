@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="author" content="CAMP POE SRI LANKA">
         <title>CAMP POE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 
@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <article class="team-mate" style="border-left-color: white;">
                                         <div class="member-photo">
                                             <!-- member photo -->
-                                            <img class="img-responsive" width="100%" height="100%" src="<?php echo base_url(); ?>/resoures/img/team/ben_picture.jpg" alt="">
+                                            <img class="img-responsive" width="100%" height="100%" src="<?php echo base_url(); ?>/resoures/img/team/steffi.jpg" alt="">
                                             <!-- /member photo -->
 
                                             <!-- member social profile -->
@@ -108,17 +108,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                         <!-- member name & designation -->
                                         <div class="member-title"><center>
-                                                <h3>Ben</h3>
+                                                <h3>Steffi</h3>
                                                 <span>Trainer</span></center>
                                         </div>
                                         <!-- /member name & designation -->
 
                                         <!-- about member -->
                                         <div class="member-info">
-                                            <p style="color: white;">Being from the West Midlands, I got into surfing from studying 
-                                                history and tourism at Exeter University in the UK. My passion for 
-                                                surfing led me to running the University Surf Club in my final year,
-                                                where a few friends and.. <a href="#" style="color: wheat" class="pull-right" data-toggle='modal' data-target='#profile_ben'>Read More</a></p>
+                                            <p style="color: white;">Steffi discovered her love for Yoga eight years ago after 
+                                                she had to have a knee surgery and was looking for a way to become fit and healthy again. 
+                                                Since then Yoga has been a crucial part of her life..
+                                                <a href="#" style="color: wheat" class="pull-right" data-toggle='modal' data-target='#profile_steffi'>Read More</a></p>
                                         </div>
                                         <!-- /about member -->
                                     </article>
@@ -147,25 +147,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                         <!-- member name & designation -->
                                         <div class="member-title">
-                                            <h3>N/A</h3>
-                                            <span>N/A</span>
+                                            <h3>Ben</h3>
+                                            <span>Trainer</span>
                                         </div>
                                         <!-- /member name & designation -->
 
                                         <!-- about member -->
                                         <div class="member-info">
                                             <p style="color: white;">I hope you will love Sri Lanka as much as I do. The waves, nature and food are amazing as well as
-                                                the locals being some of the most welcoming people you will meet.We set up Camp Poe with a
-                                                view to share the wonders..<a href="#" style="color: wheat" class="pull-right" data-toggle='modal' data-target='#profile_ben'>Read More</a></p>
+                                                the locals being some of the most welcoming people you will meet.We set up Camp Poe with..<a href="#" style="color: wheat" class="pull-right" data-toggle='modal' data-target='#profile_ben'>Read More</a></p>
                                         </div>
                                         <!-- /about member -->
                                     </article>
                                 </div>
                                 <!-- end team member -->
                             </div><!--team-row-->
-
-
-
                         </div>  	<!-- End row -->
                     </div>   	<!-- End container -->
                 </section>   <!-- End section -->
@@ -376,6 +372,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         lifestyle based around healthy, sustainable living. People who want to learn or improve their
                                         surfing as well as experience yoga and meditation in a beautiful setting. Looking forward to
                                         catching some waves and rays with you in Madiha!</p>
+                                    <hr style="margin: 20px; color: peru">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="profile_steffi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" style="width: 700px;">
+                        <div class="modal-content" style="background-color: #363636;">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel" style="color: #fff79d;"><center>Story of Steffi</center></h4>                   
+                            </div>
+                            <div class="modal-body">
+                                <div class="member-photo"><center>
+                                        <!-- member photo -->
+                                        <img class="img-responsive" width="50%" height="30%" src="<?php echo base_url(); ?>/resoures/img/team/steffi.jpg" alt="">                                    
+                                    </center></div>
+                                <!-- about member -->
+                                <div class="member-info">
+                                    <hr style="margin: 20px;">
+                                    <p style="text-align: left;">Steffi discovered her love for Yoga eight years ago after she had to have a knee surgery and was looking for a way to become fit and healthy again. Since then Yoga has been a crucial part of her life and is integrated into her daily routine. She considers Yoga to be a way of creating space: space for one’s own rules, for serenity, easiness, movement and change. Yoga makes her happy and brings a smile to her face. For Steffi happiness consists of sharing the feeling Yoga brings to her with others and making them happy.
+                                        This conviction led her to become a Yoga teacher in 2013 which she did by absolving a 200 hour training at Inside Yoga in Frankfurt. Steffi has since taught Yoga at different studios in Germany(Yogaqueen, Yogakula) and given Yoga lessons for children. Next to Yoga Steffi’s other great passion is surfing. This brought her to Sri Lanka where she has supported travellers and surfers with or without Yoga experience in staying flexible and creating a balance to surfing and daily life.  
+                                        Steffi’s lessons are full of flow and strength, warming and challenging. She is looking forward to sweating and feeling with you, to relaxing, to laughing and foremost to enjoying Yoga with you
+                                    </p>
                                     <hr style="margin: 20px; color: peru">
                                 </div>
                             </div>
